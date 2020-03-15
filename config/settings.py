@@ -79,9 +79,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'test',
-        'USER': 'CHAERIN', # chaerin
-        'PASSWORD': 'qawse9845',
-        'HOST': '13.209.73.42', #127.0.0.1
+        'USER': 'chaerin',
+        'PASSWORD': 'qawse9845', #test
+        'HOST': '127.0.0.1', #13.209.73.42
         'PORT': '3306',
     }
 }
@@ -111,13 +111,13 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Seoul'
 
 USE_I18N = True
 
 USE_L10N = True
 
-USE_TZ = True
+USE_TZ = False
 
 
 # Static files (CSS, JavaScript, Images)

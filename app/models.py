@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from datetime import datetime
 
 # Create your models here.
 
@@ -12,5 +13,5 @@ class Text(models.Model):
 class Color(models.Model):
     cid = models.IntegerField(default=0, primary_key=True)
     color = models.CharField(max_length=10)
-    time_update = models.DateTimeField(default=timezone.now())
-    time_access = models.DateTimeField(default=timezone.now())
+    time_update = models.DateTimeField(auto_now=True)
+    time_access = models.DateTimeField(auto_now=True)
